@@ -1,0 +1,10 @@
+@import "src/styles/mixins";
+
+.station-status-label {
+  padding: 0.4rem 0.8rem;
+  border-radius:  0 1rem 1rem 0;
+  font-size: 0.6rem;
+  height: 100%;
+
+  @include apply-backgrounds;
+}

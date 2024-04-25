@@ -1,0 +1,12 @@
+:root {
+  --toastify-toast-width: 250px;
+  --toastify-toast-min-height: 50px;
+}
+
+.Toastify__toast {
+  margin-bottom: 0.5rem;
+
+  &-body {
+    padding: 0 6px;
+  }
+}

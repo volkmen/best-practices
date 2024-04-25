@@ -1,0 +1,53 @@
+$transition-duration: 300ms;
+
+.switcher {
+  height: 2rem;
+  //width: 6rem;
+  position: relative;
+  background: var(--color-medium-gray);
+  color: var(--color-white);
+  overflow: hidden;
+  border-radius: 0.25rem;;
+
+  &:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 50%;
+    background: var(--color-warning);
+    transition: all $transition-duration;
+    border-radius: 0.5rem;
+    transform: translateX(-5%);
+  }
+
+  &.active {
+    &:before {
+      transform: translateX(105%);
+    }
+  }
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: 1;
+    position: relative;
+  }
+
+  &__item {
+    padding: 0.25rem 1rem;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    opacity: 0.5;
+    transition: opacity $transition-duration;
+    cursor: pointer;
+    color: var(--color-dark-gray);
+
+    &.switcher-active {
+      opacity: 1;
+    }
+  }
+}

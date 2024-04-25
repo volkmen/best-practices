@@ -1,0 +1,156 @@
+@import "src/styles/mixins";
+
+$border-radius: 0.25rem;
+$bar_space: 20px;
+$bar-width: 45px;
+$height: 500px;
+
+
+.html-bar-graphic {
+  height: $height;
+  padding-bottom: 20px;
+  font-size: 0.8rem;
+  position: relative;
+
+  &__chart {
+    align-items: flex-end;
+    position: relative;
+    display: flex;
+    height: 90%;
+    border-bottom: 1px solid var(--color-gray);
+
+    &__item {
+      width: $bar-width;
+      margin-left: $bar_space;
+      background: var(--color-primary);
+      border-top-right-radius: $border-radius;
+      border-top-left-radius: $border-radius;
+      color: var(--color-white);
+      transition: all 500ms ease-in-out;
+      height: 0;
+      text-align: center;
+      position: relative;
+
+      &.animated {
+        height: 100%;
+      }
+
+      &__value {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        white-space: nowrap;
+        overflow: visible;
+        //text-overflow: ellipsis;
+        width: 100%;
+        left: 0;
+      }
+
+      &__x-axis {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        color: var(--color-gray);
+        text-align: center;
+        transform: translateY(130%)
+      }
+
+      &__bottom-label {
+        bottom: 10px;
+        left: 0;
+        position: absolute;
+        display: block;
+        width: 100%;
+        color: var(--color-warning);
+      }
+
+      @include apply-colors()
+    }
+
+    &__x-unit {
+      position: absolute;
+      bottom: 5%;
+      right: 0;
+      color: var(--color-gray);
+    }
+
+    &__y-unit {
+      position: absolute;
+      top: -7%;
+      left: 0;
+      color: var(--color-gray);
+    }
+  }
+
+  &__y-axis {
+    height: calc(90% + 7px);
+    border-right: 1px solid var(--color-gray);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding-right: 0.5rem;
+    text-align: right;
+    color: var(--color-gray);
+
+    span {
+      transform: translateY(-50%);
+      position: relative;
+      height: 10px;
+      display: block;
+
+      &:after {
+        content: '-';
+        position: absolute;
+        display: block;
+        width: 4px;
+        height: 1px;
+        right: -0.5rem;
+        top: 0;
+      }
+    }
+  }
+
+  &__x-axis {
+    border-top: 2px solid var(--color-gray);
+    display: flex;
+    justify-content: space-between;
+
+    &--label {
+      margin-left: $bar_space;
+      width: $bar-width;
+      text-align: center;
+      margin-top: 0.5rem;
+      color: var(--color-white);
+    }
+  }
+
+  &__legend {
+    position: absolute;
+    right: 0;
+    top: -7%;
+
+    &--icon {
+      height: 2px;
+      width: 50px;
+      display: block;
+      @include apply-colors()
+    }
+  }
+
+  &__empty-state {
+    width: 100px;
+    height: 100px;
+    fill: var(--color-gray);
+  }
+}
+
+.extra-element-at-bar {
+  color: var(--color-gray);
+  width: $bar-width;
+  margin-left: $bar_space;
+  position: absolute;
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid white;
+}

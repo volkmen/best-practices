@@ -1,0 +1,29 @@
+.header-component {
+  height: 5rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  background: var(--color-dark-gray);
+  border-bottom: 1px solid var(--color-card-gray);
+  width: 100%;
+  z-index: 20;
+
+  &__logo  {
+    margin-right: 0.5rem;
+    //width: 2.5rem;
+  }
+
+  &__localization-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header-placeholder {
+  margin-top: 5rem;
+}

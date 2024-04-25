@@ -1,0 +1,27 @@
+$screen-max-width: 1300px;
+
+:root {
+  --color-white: #ffffff;
+  --color-dark-gray: #3A3B3C; //background
+  --color-dark: rgba(20, 20, 20, 0.77);
+  --color-dark-gray-50: #3A3B3C50; //background
+  --color-half-dark-gray: #444; //background-item
+  --color-card-gray: #6b6b6b; //card-item
+  --color-success: #4d9078;
+  --color-green: #18DA94;
+  --color-primary: #255f85;
+  --color-medium-gray: #a4a4a4; // gray
+  --color-gray: #a4a4a4;
+  --color-silver: #8190a4;
+  --color-orange: #fbb13c;
+  --color-danger: #FF0000;
+  --color-black: #000000;
+
+  //--color-gray: #292929;
+  --color-white-medium-gray: #999999;
+  --color-lihgt-gray: #D0CFCF;
+  --color-lihgt-gray-90: #D0CFCF90;
+  --color-warning: #FFC008;
+  //--color-white: #F8F9FA;
+}
+

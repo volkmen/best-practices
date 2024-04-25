@@ -1,0 +1,32 @@
+@import "bootstrap.css";
+@import "reset";
+@import "colors";
+@import "basic";
+@import "animations";
+@import "global";
+@import "tooltip";
+@import "map";
+@import "typography";
+@import "typography";
+@import "layout";
+@import "tostify";
+
+.layout {
+  margin: 0 auto;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+}
+
+
+.layout-width {
+  width: 90%;
+
+  @include breakpoint-lg {
+    width: 98%;
+    margin: 0 auto;
+  }
+}

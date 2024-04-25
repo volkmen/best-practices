@@ -1,0 +1,13 @@
+.rc-tooltip {
+  z-index: 100;
+  opacity: 1;
+  background: transparent !important;
+}
+
+.rc-tooltip-inner {
+  background: transparent;
+  border: none;
+  padding: 0;
+  opacity: 1;
+  min-height: auto;
+}

@@ -1,0 +1,31 @@
+@import "src/styles/mixins";
+
+input[type='radio'] {
+  opacity: 0;
+}
+
+.radio-btn-wrapper {
+  border-radius: 50%;
+  height: 13px;
+  width: 13px;
+    
+  &.is-selected {
+    border: 1px solid var(--color-silver);
+    height: 11px;
+    width: 11px;
+  }
+  
+  &:hover {
+    opacity: 0.5
+  }
+}
+
+.lines-between-thumbs {
+  width: 75px;
+  margin: 5px 0 5px 0;
+  border-top: none;
+}
+
+.slider-colors {
+  @include apply-backgrounds;
+}

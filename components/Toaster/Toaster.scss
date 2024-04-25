@@ -1,0 +1,16 @@
+.toaster {
+  &__icon--success {
+    color: var(--color-success);
+  }
+
+  &__icon--error {
+    width: 20px;
+    height: 20px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+    color: var(--color-danger);
+  }
+}

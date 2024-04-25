@@ -1,0 +1,108 @@
+@import "src/styles/mixins";
+
+$primary-color: var(--color-primary);
+$animation-duration: 150ms;
+
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.button {
+  color: var(--color-white);
+  border: none;
+  border-radius: 0.65rem;
+  cursor: pointer;
+  transition: all $animation-duration;
+  position: relative;
+  height: fit-content;
+  text-transform: uppercase;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 100%;
+  }
+
+  @include apply-colors;
+
+  &.size-small {
+    padding: 6px 12px;
+    font-size: 0.7rem;
+  }
+
+  &.size-small-medium {
+    padding: 7px 14px;
+    font-size: 0.85rem;
+  }
+
+  &.size-medium {
+    padding: 8px 16px;
+    font-size: 1rem;
+    height: 2.2rem;
+    //max-height: 3rem;
+  }
+
+  &.size-large {
+    padding: 12px 24px;
+    font-size: 1.25rem;
+    height: 3.2rem;
+  }
+
+  &:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    display: block;
+    background: black;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  &:hover {
+    &:after {
+      opacity: 0.2;
+    }
+  }
+
+  &:active {
+    transform: scale(0.98);
+
+    &:after {
+      opacity: 0.3;
+    }
+    //filter: brightness(60%);
+  }
+
+  &.disabled {
+    opacity: 0.35;
+    pointer-events: none;
+  }
+
+  &__loader-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__icon {
+    display: inline-block;
+    color: red;
+    fill: white;
+
+    div {
+      display: flex;
+    }
+    @include text-colors;
+    @include icon-sizes;
+    //@include icon-font-sizes;
+  }
+}

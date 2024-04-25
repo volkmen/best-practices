@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+
+  &__item {
+    padding: 0.5rem 0.75rem;
+    text-transform: uppercase;
+    background: transparent;
+    border-radius: 0.5rem;
+    transition: all 200ms;
+
+    &.is-selected {
+      color: var(--color-success);
+      opacity: 1;
+    }
+
+    &:hover {
+      color: var(--color-white);
+      opacity: 1;
+    }
+  }
+}

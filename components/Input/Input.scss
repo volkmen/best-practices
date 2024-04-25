@@ -1,0 +1,89 @@
+@import "src/styles/mixins";
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+$regular-color: var(--color-lihgt-gray);
+$focused-color: var(--color-white);
+$transition-duration: 200ms;
+
+.input-wrapper {
+  position: relative;
+  display: block;
+  color: var(--color-lihgt-gray);
+
+  svg {
+    position: absolute;
+    right: 0;
+    top: 4px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    color: var(--color-white-medium-gray);
+    transition: all $transition-duration;
+
+    &:hover {
+      color: var(--color-white);
+    }
+  }
+}
+
+.input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-gray);
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  line-height: 1;
+  height: 2.25rem;
+  caret-color: $focused-color;
+  transition: all $transition-duration;
+  display: block;
+  color: var(--color-gray);
+  width: 100%;
+
+  &:hover:not(&.is-error):not(&[type="range"]) {
+    border-bottom: 1px solid var(--color-white);
+  }
+
+  &::placeholder:not(&.is-error) {
+    color: var(--color-white-medium-gray);
+    transition: all $transition-duration;
+    font-size: 1rem;
+  }
+
+  &:focus:not(&[type="range"]) {
+    color: var(--color-white);
+
+    &::placeholder {
+      font-size: 0.8rem;
+    }
+
+    &:not(&.is-error) {
+      border-bottom: 1px solid $focused-color;
+
+      &::placeholder {
+        color: darken(#D0CFCF, 40%);
+      }
+    }
+  }
+
+  &.is-error {
+    border-bottom: 1px solid var(--color-danger);
+  }
+
+  &__error {
+    text-align: left;
+    margin-left: 0.5rem;
+    margin-top: 0.25rem;
+    position: relative;
+
+    &:focus:not(&.is-error) {
+
+    }
+  }
+
+  @include text-sizes;
+}

@@ -1,0 +1,9 @@
+@import "src/styles/mixins";
+
+.label {
+  border-radius: 1rem;
+  display: inline-block;
+  padding: 0.25rem 1.25rem;
+
+  @include apply-colors;
+}

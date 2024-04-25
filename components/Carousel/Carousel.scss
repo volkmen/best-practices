@@ -1,0 +1,25 @@
+.carousel__caret {
+  background: var(--color-dark-gray);
+}
+
+.carousel__indicators {
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  gap: 5px;
+  padding: 5px 7px;
+  border-radius: 5px;
+  background: var(--color-dark-gray);
+
+  &__item {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--color-gray);
+    cursor: pointer;
+
+    &__selected {
+      background: var(--color-white);
+    }
+  }
+}

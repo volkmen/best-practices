@@ -1,0 +1,41 @@
+@import "variables";
+
+.color-white {
+  color: var(--color-white);
+}
+
+.color-light-gray {
+  color: var(--color-lihgt-gray);
+}
+
+.background-light {
+  background: var(--color-white);
+}
+
+.background-danger {
+  background: var(--color-danger);
+}
+
+.background-warning {
+  background: var(--color-warning);
+}
+
+.background-success {
+  background: var(--color-success);
+}
+
+.background-dark {
+  background: var(--color-dark-gray);
+}
+
+.background-dark-transparent {
+  background: var(--color-dark-gray-50);
+}
+
+.background-light-gray {
+  background: var(--color-lihgt-gray);
+}
+
+.background-black {
+  background: var(--color-black);
+}

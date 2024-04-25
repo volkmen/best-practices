@@ -1,0 +1,6 @@
+@import "src/styles/mixins";
+
+.cards-layout {
+  display: grid;
+  animation: fadein 300ms;
+}

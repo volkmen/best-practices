@@ -1,0 +1,25 @@
+.separator {
+  height: 1px;
+  width: 100%;
+  background: var(--color-white-medium-gray);
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: var(--color-white-medium-gray);
+  }
+
+  &.color__white {
+    &::after {
+      background: var(--color-white);
+    }
+  }
+
+  &.color__light-gray {
+    background: var(--color-lihgt-gray);
+  }
+}

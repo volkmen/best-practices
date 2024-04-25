@@ -1,0 +1,22 @@
+.zipper {
+  position: absolute;
+  width: 10px;
+  height: 200px;
+  background: rebeccapurple;
+  top: 0;
+  z-index: 100;
+  cursor: pointer;
+  border-radius: 4px;
+  //left: 0;
+
+  &__switcher {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #8190a4;
+    bottom: 0%;
+    border-radius: 1rem;
+    //opacity: 0.25;
+    transform: translate(-5px, 10px);
+  }
+}

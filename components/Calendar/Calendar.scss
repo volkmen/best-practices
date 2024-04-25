@@ -1,0 +1,36 @@
+.calendar {
+  border-radius: 1rem;
+  overflow: hidden;
+
+  &__container {
+    position: relative;
+  //  background: var(--color-half-dark-gray);
+  //  border-radius: 1rem;
+  //  cursor: pointer;
+  //  transition: all 125ms;
+  //
+  //  &:hover {
+  //    box-shadow: 0 0 5px 1px var(--color-card-gray);
+  //    transform: scale(1.01);
+  //  }
+  }
+
+  &__select-btn {
+    background: var(--color-card-gray);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 125ms;
+    padding: 0.25rem 1rem;
+    z-index: 1;
+
+    &:hover {
+      background: var(--color-primary);
+      color: var(--color-white) !important;
+    }
+  }
+}
+
+.rdrDateRangePickerWrapper {
+  border-radius: 1rem;
+  overflow: hidden;
+}

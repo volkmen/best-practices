@@ -1,0 +1,33 @@
+@import "src/styles/mixins";
+
+.text {
+  @include text-colors;
+  @include text-sizes;
+  display: block;
+}
+
+
+.text-icon {
+  svg {
+    color: white;
+    fill: white;
+  }
+
+  @include text-colors;
+  @include icon-sizes;
+}
+
+.editable-text {
+  &__text {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__input.editable-text__input {
+    height: auto;
+    padding: 0;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+}

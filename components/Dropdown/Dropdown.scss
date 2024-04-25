@@ -1,0 +1,33 @@
+.dropdown-overlay {
+  background: transparent;
+  opacity: 1;
+
+  .rc-tooltip-inner {
+    border-color: transparent !important;
+    background: transparent !important;
+  }
+}
+
+.dropdown {
+  min-width: 200px;
+  background: var(--color-dark-gray);
+  color: var(--color-lihgt-gray);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px 1px var(--color-card-gray);
+  overflow: hidden;
+
+  &__item {
+    padding: 0.5rem;
+    transition: all 100ms;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--color-success);
+      color: var(--color-dark-gray);
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #1A3A321F;
+    }
+  }
+}

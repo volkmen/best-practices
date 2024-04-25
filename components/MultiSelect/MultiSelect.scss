@@ -1,0 +1,66 @@
+.multi-select {
+
+  &__menu {
+    margin-top: 1rem;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    background: var(--color-half-dark-gray);
+    min-width: 200px;
+    max-width: 400px;
+    max-height: 200px;
+    overflow-y: auto;
+    color: var(--color-lihgt-gray);
+    box-shadow: 0 0 5px 1px var(--color-card-gray);
+
+    &__item {
+      padding: 0.5rem;
+      transition: all 100ms;
+      border-radius: 4px;
+      cursor: pointer;
+
+      label {
+        color: var(--color-lihgt-gray);
+      }
+
+      &:hover {
+        color: var(--color-success);
+
+        label {
+          color: var(--color-success);
+        }
+      }
+    }
+
+    &.theme-light {
+      background: var(--color-lihgt-gray);
+      color: var(--color-dark-gray);
+
+      label {
+        color: var(--color-dark-gray);
+      }
+    }
+  }
+
+  &__chips {
+    color: var(--color-lihgt-gray);
+    background: var(--color-primary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+
+    &__close {
+      transition: all 200ms;
+
+      &:hover {
+        background: var(--color-danger);
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__checkboxes {
+    &__checked {
+      accent-color: var(--color-success) ;
+    }
+  }
+}

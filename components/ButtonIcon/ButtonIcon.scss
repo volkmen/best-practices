@@ -1,0 +1,40 @@
+.button-icon {
+  border-radius: 0.25rem;
+
+  img, svg {
+    height: 100%;
+    display: inline-block;
+  }
+
+  &.size-small {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 0.25rem;
+
+    svg {
+      height: 1.25rem;
+    }
+  }
+
+  &.size-medium {
+    height: 2.2rem;
+    width: 2.2rem;
+    padding: 0.5rem;
+
+    svg {
+      height: 1.25rem;
+    }
+  }
+
+  &.size-large {
+    height: 3.2rem;
+    width: 3.2rem;
+    text-align: center;
+    padding: 0.75rem;
+
+    svg {
+      height: 1.25rem;
+      display: block;
+    }
+  }
+}

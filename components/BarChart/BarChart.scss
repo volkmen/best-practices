@@ -1,0 +1,10 @@
+.graph-bar-chart {
+  overflow-x: auto;
+  padding-bottom: 2rem;
+  color: var(--color-white-medium-gray);
+
+  .recharts-tooltip-cursor {
+    fill: var(--color-white-medium-gray);
+    opacity: 0.25;
+  }
+}

@@ -1,0 +1,13 @@
+@import "src/styles/mixins";
+
+.icon-svg {
+  @include icon-sizes;
+  @include icon-font-sizes;
+  @include text-colors;
+
+  svg {
+    width: 100%;
+    height: auto;
+    fill: currentColor;
+  }
+}

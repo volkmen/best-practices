@@ -1,0 +1,303 @@
+@mixin breakpoint-xs {
+  @media only screen and (max-width: 510px) {
+    @content
+  }
+}
+
+@mixin breakpoint-sd {
+  @media only screen and (max-width: 900px) {
+    @content
+  }
+}
+
+@mixin breakpoint-sd-md {
+  @media only screen and (max-width: 1050px) {
+    @content
+  }
+}
+
+@mixin breakpoint-md {
+  @media only screen and (max-width: 1200px) {
+    @content
+  }
+}
+
+@mixin breakpoint-lg {
+  @media only screen and (max-width: 1600px) {
+    @content
+  }
+}
+
+@mixin breakpoint-lg-X {
+  @media only screen and (max-width: 1800px) {
+    @content
+  }
+}
+
+@mixin breakpoint-xlg {
+  @media only screen and (max-width: 2100px) {
+    @content
+  }
+}
+
+@mixin breakpoint-xxlg {
+  @media only screen and (max-width: 2600px) {
+    @content
+  }
+}
+
+@mixin breakpoint-xxxlg {
+  @media only screen and (min-width: 3300px) {
+    @content
+  }
+}
+
+@mixin apply-colors {
+  color: var(--color-white);
+
+  &.color-primary {
+    background: var(--color-primary);
+  }
+
+  &.color-danger {
+    background: var(--color-danger);
+  }
+
+  &.color-secondary {
+    background: var(--color-gray);
+  }
+
+  &.color-success {
+    background: var(--color-success);
+  }
+
+  &.color-green {
+    background: var(--color-green);
+  }
+
+  &.color-warning {
+    background: var(--color-warning);
+  }
+
+  &.color-light {
+    background: var(--color-white);
+    color: var(--color-dark-gray);
+  }
+
+  &.color-dark {
+    background: var(--color-dark-gray);
+  }
+
+  &.color-transparent {
+    background: transparent;
+  }
+}
+
+@mixin apply-backgrounds {
+  color: var(--color-white);
+
+  &.background-white {
+    background: var(--color-white);
+  }
+
+  &.background-light {
+    background: var(--color-lihgt-gray);
+  }
+
+  &.background-danger {
+    background: var(--color-danger);
+  }
+
+  &.background-warning {
+    background: var(--color-warning);
+  }
+
+  &.background-success {
+    background: var(--color-success);
+  }
+
+  &.background-black {
+   background: var(--color-black);
+  }
+
+  &.background-primary {
+    background: var(--color-primary);
+  }
+
+  .background-transparent {
+    background: transparent;
+  }
+  //
+  //&.label-error {
+  //  background: #255F85;
+  //}
+  //
+  //&.label-default {
+  //  background: #A4A4A4;
+  //  color: var(--color-dark-gray);
+  //}
+}
+
+
+@mixin text-sizes {
+  &.size-extra-small {
+    font-size: 0.5rem;
+  }
+
+  &.size-x-small {
+    font-size: 0.65rem;
+  }
+
+  &.size-small {
+    font-size: 0.75rem;
+  }
+
+  &.size-small-medium {
+    font-size: 1.125rem;
+  }
+
+  &.size-default {
+    font-size: 1rem;
+  }
+
+  &.size-medium {
+    font-size: 1.25rem;
+  }
+
+  &.size-medium-large {
+    font-size: 1.5rem;
+  }
+
+  &.size-large {
+    font-size: 1.75rem;
+  }
+
+  &.size-huge {
+    font-size: 2rem;
+  }
+
+  &.size-extra-huge {
+    font-size: 3rem;
+  }
+}
+
+@mixin text-colors {
+  &.text-color-white {
+    color: var(--color-white);
+  }
+
+  &.text-color-light {
+    color: var(--color-lihgt-gray);
+  }
+
+  &.text-color-half-light {
+    color: var(--color-white-medium-gray);
+  }
+
+  &.text-color-gray {
+    color: var(--color-medium-gray);
+  }
+
+  &.text-color-success {
+    color: var(--color-success);
+  }
+
+  &.text-color-primary {
+    color: var(--color-primary);
+  }
+
+  &.text-color-danger {
+    color: var(--color-danger);
+  }
+
+  &.text-color-dark {
+    color: var(--color-dark-gray);
+  }
+
+  &.text-color-orange {
+    color: var(--color-orange);
+  }
+
+  &.text-color-warning {
+    color: var(--color-warning);
+  }
+
+  &.text-color-silver {
+    color: var(--color-silver);
+  }
+
+  &.text-color-inherit {
+    color: inherit;
+  }
+}
+
+@mixin icon-font-sizes {
+  svg {
+    width: 100%;
+    height: auto;
+  }
+
+  &.icon-font-size-extra-small {
+    width: 0.5rem;
+  }
+
+  &.icon-font-size-small {
+    width: 0.75rem;
+  }
+
+  &.icon-font-size-small-medium {
+    width: 1.125rem;
+  }
+
+  &.icon-font-size-default {
+    width: 1rem;
+  }
+
+  &.icon-font-size-medium {
+    width: 1.25rem;
+  }
+
+  &.icon-font-size-medium-large {
+    width: 1.5rem;
+  }
+
+  &.icon-font-size-large {
+    width: 1.75rem;
+  }
+
+  &.icon-font-size-huge {
+    width: 2rem;
+  }
+
+  &.icon-font-size-extra-huge {
+    width: 3rem;
+  }
+}
+
+@mixin icon-sizes {
+  svg {
+    width: 100%;
+    height: auto;
+  }
+
+  &.icon-size-small {
+    width: 16px;
+  }
+
+  &.icon-size-small-medium {
+    width: 16px;
+  }
+
+  &.icon-size-medium {
+    width: 24px;
+  }
+
+  &.icon-size-large {
+    width: 32px;
+  }
+
+  &.icon-size-x-large {
+    width: 48px;
+  }
+}
+
