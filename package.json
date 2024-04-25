@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "engines": {
+    "npm": "^9.6.7",
+    "node": "^18.17.1"
+  },
   "dependencies": {
     "@faker-js/faker": "^8.0.2",
     "@types/react-portal": "^4.0.4",
