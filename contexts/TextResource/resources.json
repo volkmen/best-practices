@@ -1,0 +1,16 @@
+{
+  "en": {
+    "en": "EN",
+    "uk": "UKR",
+    "English": "English",
+    "Ukrainian": "Ukrainian",
+    "language": "language"
+  },
+  "uk": {
+    "en": "EN",
+    "uk": "UKR",
+    "English": "Англійська",
+    "Ukrainian": "Українська",
+    "language": "мова"
+  }
+}
