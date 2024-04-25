@@ -1,4 +1,7 @@
-This module is about UI components like the best my own
+This module is about some best practises of my own
+1. UI components
+2. contexts
+3. services
 
 TODO:
-to create storybooks to run it locally
+to create storybooks to run components locally
